@@ -35,8 +35,8 @@ named `libaries` under your playbook or role directory.
 
 - name: Wait for server to pass health-checks
   health_check:
-  url: "http://{{ inventory_name }}"
-  delegate_to: 127.0.0.1
+    url: "http://{{ inventory_name }}"
+    delegate_to: 127.0.0.1
 
 # Runs a health check for an HTTP server running on the current host.
 # passes an Host header to reach the virtual host we want to test.
