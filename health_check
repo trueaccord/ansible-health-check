@@ -53,7 +53,7 @@ options:
         default: 200
     expected_regexp:
         description:
-           - An optional regular expectation that can be used to validate the
+           - An optional regular expression that can be used to validate the
              response from the server. If the response body does not match the
              regular expression the attempt is considered as failed. Note that
              the regular expression tries to match from the beginning of the
