@@ -12,7 +12,7 @@ the expected response are configurable.
 ## Installation
 
 Install this module by placing the file `health_check` in a directory
-named `libaries` under your playbook or role directory.
+named `library` under your playbook or role directory.
 
 ## Parameters
 
