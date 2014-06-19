@@ -13,7 +13,7 @@ description:
       the expected response are configurable.
 
     - Install this module by putting the file C(health_check) in a directory
-      named C(libaries) under your playbook or role directory.
+      named C(library) under your playbook or role directory.
 
 notes:
     - Requires urllib2
