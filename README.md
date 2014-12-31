@@ -21,7 +21,7 @@ named `library` under your playbook or role directory.
 | url                   | yes      |         | URLs to perform health checks on. |
 | headers               | no       |         | Dictionary of HTTP headers to send in the request. |
 | initial_delay         | no       | 0       | Number of seconds to wait before sending the first request. |
-| delay_between_retries | no       | 5       | Number of seconds to wait between tries. |
+| delay_between_tries   | no       | 5       | Number of seconds to wait between tries. |
 | max_retries           | no       | 10      | Number of times to try before giving up. |
 | timeout               | no       | 10      | Number of seconds to wait for a response for each request. If a response is not received within this number of second, the attempt is considered to be a failure. |
 | expected_status       | no       | 200     | Expected HTTP status code. If the server responds with a different status code, then the attempt is considered to be a failure. |
