@@ -108,7 +108,7 @@ def check_server_status(url, headers, timeout, expected_status,
     content = fp.read()
     fp.close()
 
-    if expected_regexp and not re.match(expected_regexp, content):
+    if expected_regexp and not re.search(expected_regexp, content):
         return False, 'Content did not match expected regexp.'
 
     return True, 'OK'
