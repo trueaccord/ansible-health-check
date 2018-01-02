@@ -91,13 +91,19 @@ import re
 import socket
 import time
 import urllib2
+import ssl
 
 
 def check_server_status(url, headers, timeout, expected_status,
                         expected_regexp):
+    
+    context = ssl.create_default_context()
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE
+    
     request = urllib2.Request(url, headers=headers)
     try:
-        fp = urllib2.urlopen(request, timeout=timeout)
+        fp = urllib2.urlopen(request, timeout=timeout, context=context)
     except (urllib2.URLError, httplib.HTTPException, socket.error), e:
         return False, str(e)
 
